@@ -28,6 +28,16 @@ class ContactController extends Controller
                     'delete' => ['POST'],
                 ],
             ],
+            'access' => [
+                'class' => AccessControl::className(),
+                'only' => ['*'],
+                'rules' => [
+                    [
+                        'allow' => true,
+                        'roles' => ['operator'],
+                    ],
+                ],
+            ],
         ];
     }
 
