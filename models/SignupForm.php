@@ -49,7 +49,7 @@ class SignupForm extends Model
     {
         return [
 
-            'password' => 'Код пользователя',
+            'password' => 'Пароль пользователя',
             'username' => 'Имя пользователя',
             'email' => 'Электропочта',
             'role' => 'Роль',
