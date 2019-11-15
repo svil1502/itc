@@ -150,7 +150,6 @@ class User2 extends ActiveRecord implements IdentityInterface
             $this->setPassword($this->password);
             $auth = Yii::$app->authManager;
             $authorRole = $auth->getRole($this->role);
-            $auth->assign($authorRole, $this->getId());
         }
         return parent::beforeSave($insert);
     }
